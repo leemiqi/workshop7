@@ -1,7 +1,7 @@
 var MongoClient = require('mongodb').MongoClient;
+
 // Connect to database named 'facebook'.
 var url = 'mongodb://localhost:27017/facebook';
-
 MongoClient.connect(url, function(err, db) {
   if (err) {
     throw new Error("Could not connect to database: " + err);
